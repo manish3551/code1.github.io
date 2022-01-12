@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.uni-padding{
+    padding: 0 100px;
+}
+/* Top header */
+.top-header{
+    background-color: #a88c95;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.social-links a i{
+    color: #6a3144;
+    font-size: 18px;
+    background-color: #d2d2d2;
+    border-radius: 50%;
+    padding: 8px 7px; 
+    transition: all 0.5s ease;
+    
+}
+.social-links a i:hover{
+    background-color: #ee802f;
+    color: #fff;
+    transform: scale(1.1);
+    margin: 0px 5px;
+}
+
+.search input {
+   height: 30px;
+   width: 200px;
+   border-radius: 5px 0px 0px 5px;
+   padding-left: 10px;   
+}
+.search-btn{
+    color: #fff;
+    background-color: #97455f;
+    width: 80px;
+    height: 30px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.search-btn:hover{
+    background-color: #ee802f;
+}
+/* Logo */
+.logo{
+    text-align: center;
+    margin: 10px auto;
+}
+.logo img{
+    height: 50px;
+}
+
+/* NavBar */
+header nav{
+    text-align: center;
+    background-color: #97455f;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 14pt;
+    font-weight: 600;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+header nav ul li:hover{
+    background-color: #ee802f;
+}
+/* Banner Image */
+.banner img{
+    width: 100%;
+    height: 600px;
+}
+/* Who We Are */
+.who-we-are{
+    margin-top: 50px;
+    overflow: auto;
+}
+#img-mobile{
+    display: none;
+}
+#left{
+    width: 50%;
+    float: left;
+}
+#left h2{
+    font-size: 30pt;
+}
+#left p{
+    font-size: 16pt;
+    text-align: justify;
+    margin-top: 15px;
+}
+#left button{
+    margin-top: 35px;
+    padding: 10px 25px;
+    background-color: #6a3144;
+}
+#left button:hover{
+    background-color: #ee802f;
+}
+#left button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+#right{
+    width: 50%;
+    float: left;
+}
+#right img{
+    width: 100%;
+    height: 380px;
+    margin-left: 20px;
+}
+/* Our Services */
+.services{
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    overflow: auto;
+}
+.services h1{
+    padding-top: 30px;
+    font-size: 45pt;
+    text-align: center;
+    color: #6a3144;
+}
+.services p{
+    font-size: 16pt;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.list-item{
+    /* border: 1px solid red;  */
+    width: 31%;
+    padding: 100px 20px 0px 40px;
+    margin: 5px;
+    float: left;
+}
+.list-item:hover{
+    background-color: #ffffff;
+    box-shadow: 10px 18px #e2e2e2;
+}
+.number{
+    font-size: 80pt;
+    opacity: 0.2;
+    font-weight: 600;
+    line-height: 0;
+}
+.list-item-head{
+    font-size: 20px;
+    margin-left: -60px;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+.space-head{
+    padding-left: 22%;
+}
+.list-item p{
+    text-align: left;
+    padding: 30px 0px 0px 70px;
+    font-size: 16px;
+}
+.services{
+    padding-bottom: 70px;
+}
+/* Quick Contact Section */
+.quik-contact{
+    background-image: url(../images/quik_contact.jpg);
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.quik-contact h2{
+    font-size: 32pt;
+    color: #fff;
+    font-weight: 200;
+    padding: 80px 0px 40px 0px;
+}
+.quik-contact input{
+    width: 429px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.quik-contact textarea{
+    width: 885px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+#button{
+    width: 20%;
+    margin: 20px;
+    padding: 10px 35px;
+    padding-bottom: 35px;
+    font-size: 15pt;
+    border-radius: 30px;
+    background-color: #97455f;
+    border: none;
+    color: #fff;
+}
+/* footer */
+footer{
+    margin: 60px 0px;
+    text-align: center;
+    color: #565656;
+}
+footer img{
+    width: 25%;
+}
+footer h1{
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+footer h1 sup{
+    font-size: 15px;
+}
+footer p{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #6a3144;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+
+/* Mobile Menu  */
+#navbar ul #mobile-menu-close, #mobile-menu{
+    display: none;
+}
+
+
+/* Media Queries and Responsive */
+
+@media only screen and (max-width:1253px){
+    header nav ul li{
+        font-size: 12pt;
+    }
+    #left p {
+        font-size: 14pt;
+        margin-top: 10px;
+    }
+    #left button {
+        margin-top: 25px;
+    }
+    #right img {
+        height: 350px;
+    }
+    .services h1 {
+        font-size: 40pt;
+    }
+    .services p{
+        font-size: 14pt;
+    }
+    .list-item {
+        padding: 60px 20px 0px 20px;
+    }
+    .number {
+        font-size: 60pt;
+        opacity: 0.3;
+    }
+    .list-item-head {
+        font-size: 17px;
+    }
+    .space-head {
+        padding-left: 17%;
+    }
+    .list-item p {
+        padding: 23px 0px 0px 36px;
+    }
+    .quik-contact h2{
+        font-size: 32pt;
+        padding: 40px 0px 40px 0px;
+    }  
+    .quik-contact input {
+        width: 80%;
+        height: 46px;
+        padding-left: 40px;
+        font-size: 19px;
+    }
+    .quik-contact textarea{
+        width: 80%;
+        padding-left: 40px;
+        font-size: 19px;
+    }
+    #button {
+        width: 30%;
+        margin: 20px;
+        padding: 9px 41px;
+        font-size: 20pt;
+        padding-bottom: 45px;
+    }
+    footer img {
+        margin-bottom: 15px;
+    }
+    footer p {
+        margin-top: 41px;
+    }
+}
+@media only screen and (max-width:994px){
+    .social-links a i{
+        font-size: 13px;
+        padding: 9px 9px;
+    }
+    .search input{
+        height: 28px;
+        width: 159px;
+    }
+    .search-btn {
+        width: 70px;
+        height: 28px;
+    }
+    header nav ul li{
+        font-size: 10pt;
+        padding: 13px 11px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+    }
+    #right{
+        display: none;
+    }
+    #left{
+        width: 100%;
+        text-align: center;
+    }
+    #left h2{
+        margin-bottom: 20px;
+    }
+    #left p {
+        font-size: 12pt;
+    }
+    #img-mobile{
+        display: block;
+    }
+    #img-mobile img{
+        width: 100%;
+    }
+    .services h1 {
+        font-size: 34pt;
+    }
+    .services p {
+        font-size: 12pt;
+    }
+    .list-item {
+        width: 48%;
+    }
+    .quik-contact h2{
+        font-size: 32pt;
+        padding: 40px 0px 40px 0px;
+    }
+    .quik-contact input{
+        padding-left: 21px;
+        font-size: 17px;
+        height: 35px;
+    }
+    .quik-contact textarea{
+        padding-left: 21px;
+        font-size: 17px;
+    }
+    #button{
+        width: 41%;
+        padding: 5px 30px;
+        font-size: 19pt;
+        padding-bottom: 43px;
+    }
+    footer h1{
+        font-size: 29px;
+    }
+    footer p{
+        margin-top: 18px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .uni-padding{
+        padding: 0px 20px;
+    }
+    .top-header{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .social-links a i {
+        font-size: 14px;
+        padding: 6px 5px;
+    }
+    #left button{
+        padding: 5px 15px;
+    }
+    #button{
+        width: 31%;
+        padding: 0px 30px;
+        font-size: 14pt;
+    }
+    footer h1 {
+        font-size: 23px;
+        margin-top: -14px;
+    }
+    footer p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:608px){
+    .social-links a i {
+        font-size: 13px;
+        padding: 5px 3px;
+    }
+    .search input {
+        height: 26px;
+        width: 142px;
+        font-size: 11px;
+        font-weight: 700;
+    }
+    .search-btn {
+        width: 63px;
+        height: 25px;
+    }
+    .search-btn {
+        width: 59px;
+        height: 27px;
+        font-size: 12px;
+    }
+    .logo{
+        text-align: left;
+        margin: 6px auto;
+    }
+    .logo img{
+        height: 45px;
+    }
+    #mobile-menu{
+        float: right;
+    }
+    #mobile-menu i{
+        font-size: 28px;
+        margin-top: 10px;
+        color: #97455f;
+    }
+    header nav ul{
+        height: 100vh;
+    }
+    header nav ul li{
+        display: block;
+        font-size: 15px;
+        padding-bottom: 20px;
+        padding-top: 20px; 
+    }
+    #mobile-menu-close{
+        float: right;
+    }
+    #navbar {
+        position: absolute;
+        top: 109px;
+        height: 100vh;
+        width: 100%;
+        padding: 0px;
+    }
+    #navbar{
+        top:-100vh;
+        transition: all 0.5s ease;
+    }
+    #navbar ul #mobile-menu-close, #mobile-menu{
+        display: block;
+    }
+    #left h2 {
+        font-size: 25pt;
+        margin-bottom: 14px;
+    }
+    #left p {
+        font-size: 11pt;
+    }
+    #left button {
+        padding: 3px 7px;
+    }
+    #left button a{
+        font-size: 12px;
+    }
+    .services h1 {
+        font-size: 25pt;
+    }
+    .services p {
+        font-size: 11pt;
+    }
+    .list-item {
+        width: 100%;
+    }
+    .number {
+        font-size: 50pt;
+    }
+    .list-item-head {
+        margin-left: -22px;
+    }
+    .space-head {
+        padding-left: 21%;
+    }
+    .quik-contact h2 {
+        font-size: 25pt;
+        padding: 15px 0px 20px 0px;
+    }
+    .quik-contact input {
+        padding-left: 15px;
+        font-size: 13px;
+        height: 30px;
+    }
+    .quik-contact textarea {
+        padding-left: 15px;
+        font-size: 13px;
+    }
+    #button {
+        width: 34%;
+        padding: 0px 13px;
+        font-size: 11pt;
+    }
+    footer h1 {
+        font-size: 15px;
+    }
+    footer p {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+    
+    
+}
+
